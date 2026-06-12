@@ -1,10 +1,203 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My First Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nivedya S Nambiar | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f8fafc;
+color:#1e293b;
+}
+
+header{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:linear-gradient(135deg,#0f172a,#334155);
+color:white;
+padding:20px;
+}
+
+header h1{
+font-size:4rem;
+margin-bottom:10px;
+}
+
+header p{
+font-size:1.2rem;
+opacity:0.9;
+}
+
+.btn{
+display:inline-block;
+margin-top:25px;
+padding:12px 28px;
+background:white;
+color:#0f172a;
+text-decoration:none;
+border-radius:30px;
+font-weight:600;
+}
+
+section{
+max-width:1000px;
+margin:auto;
+padding:80px 20px;
+}
+
+.section-title{
+font-size:2rem;
+margin-bottom:25px;
+text-align:center;
+color:#0f172a;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:20px;
+margin-top:20px;
+}
+
+.skill{
+background:white;
+padding:20px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 5px 15px rgba(0,0,0,0.08);
+font-weight:600;
+}
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.project{
+background:white;
+padding:25px;
+border-radius:20px;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+
+.project h3{
+margin-bottom:10px;
+}
+
+.contact{
+text-align:center;
+}
+
+.contact p{
+margin:10px 0;
+}
+
+footer{
+background:#0f172a;
+color:white;
+text-align:center;
+padding:25px;
+margin-top:50px;
+}
+</style>
 </head>
+
 <body>
-    <h1>Welcome to My Website</h1>
-    <p>Hello! My name is Nivedya.</p>
+
+<header>
+<h1>Nivedya S Nambiar</h1>
+<p>Computer Science Student • Aspiring Developer • Lifelong Learner</p>
+<a href="#about" class="btn">Explore Portfolio</a>
+</header>
+
+<section id="about">
+<h2 class="section-title">About Me</h2>
+<div class="card">
+<p>
+Hello! I'm <strong>Nivedya S Nambiar</strong>, a Computer Science student passionate about technology,
+programming, web development, and continuous learning. I enjoy building projects,
+improving my skills, and exploring new technologies that create meaningful solutions.
+</p>
+</div>
+</section>
+
+<section id="skills">
+<h2 class="section-title">Skills</h2>
+<div class="skills">
+<div class="skill">C Programming</div>
+<div class="skill">Python</div>
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">Git & GitHub</div>
+<div class="skill">Problem Solving</div>
+</div>
+</section>
+
+<section id="projects">
+<h2 class="section-title">Projects</h2>
+
+<div class="projects">
+
+<div class="project">
+<h3>Portfolio Website</h3>
+<p>
+Personal portfolio hosted using GitHub Pages showcasing my skills and journey.
+</p>
+</div>
+
+<div class="project">
+<h3>Upcoming Projects</h3>
+<p>
+More academic and personal projects will be added here as I continue learning.
+</p>
+</div>
+
+</div>
+</section>
+
+<section id="education">
+<h2 class="section-title">Education</h2>
+<div class="card">
+<p>Computer Science Student</p>
+<p>Passionate about Software Development and Technology.</p>
+</div>
+</section>
+
+<section id="contact">
+<h2 class="section-title">Contact</h2>
+<div class="card contact">
+<p>Email: your-email@example.com</p>
+<p>GitHub: github.com/nivedyasnbr-jpg</p>
+</div>
+</section>
+
+<footer>
+<p>© 2026 Nivedya S Nambiar. All Rights Reserved.</p>
+</footer>
+
 </body>
 </html>
